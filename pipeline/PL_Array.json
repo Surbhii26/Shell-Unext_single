@@ -1,6 +1,35 @@
 {
 	"name": "PL_Array",
 	"properties": {
+		"activities": [
+			{
+				"name": "act_filter",
+				"type": "Filter",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.Surbhiggarwal",
+						"type": "Expression"
+					},
+					"condition": {
+						"value": "@not(equals(item(),'c'))",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"Surbhiggarwal": {
+				"type": "array",
+				"defaultValue": [
+					"a",
+					"b",
+					"c",
+					"d"
+				]
+			}
+		},
 		"annotations": []
 	}
 }
