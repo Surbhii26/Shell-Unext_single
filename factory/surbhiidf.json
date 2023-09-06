@@ -1,0 +1,9 @@
+{
+	"name": "surbhiidf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "87c29021-71b2-435a-a921-0fdfd4689eaf",
+		"tenantId": "dce87315-8ffa-4a01-ab40-0de5a7214b2f"
+	}
+}
